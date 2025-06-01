@@ -19,7 +19,8 @@ app.use(
   cors({
     origin: [
       "https://mern-task-manager-102.netlify.app",
-      "http://localhost:3000"
+      "http://localhost:3000",
+      process.env.FRONTEND_URL
     ],
     methods: ["GET", "POST", "DELETE", "PUT"],
     credentials: true,
